@@ -46,6 +46,10 @@ input {
   background: #f2f2f2;
 }
 
+label {
+  color: black;
+}
+
 .error {
   border-style: solid;
   border: 2px solid #ffa4a4;
@@ -60,4 +64,8 @@ button {
 button:disabled {
   cursor: default;
   background: #85a385;
+}
+
+.data-fields {
+  color: black;
 }
