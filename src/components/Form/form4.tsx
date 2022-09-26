@@ -35,7 +35,7 @@ export function Form4(props: any) {
             className="form-field"
             type="text"
             id="user-input"
-            name="userName"
+            // name="userName"
             value={username}
             onChange={handleUsernameInputChange}
           />
@@ -44,7 +44,7 @@ export function Form4(props: any) {
             className="form-field"
             type="password"
             id="password-input"
-            name="password"
+            // name="password"
             value={password}
             onChange={handlePasswordInputChange}
           />
@@ -67,9 +67,16 @@ function LoginForm() {
     password: "",
   });
 
-  const onSubmitHandler = (val: any) => {
-    setForm(val);
-    console.log("Val:" + JSON.stringify(val))
+  // const onSubmitHandler = (val: any) => {
+  //   setForm(val);
+  //   console.log("Val:" + JSON.stringify(val))
+  // };
+  const onSubmitHandler = ({ userName, password }: any) => {
+    setForm({ userName, password });
+    console.log(
+      "Val:"
+      + JSON.stringify({ userName, password })
+    )
   };
 
   if (!form.userName || !form.password) {
