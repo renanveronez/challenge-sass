@@ -8,6 +8,8 @@ export function Form2() {
     password: ""
   });
 
+  const [showMessage, setShowMessage] = useState(false);
+
   const { username, password } = data;
 
   const changeHandler = (e: any) => {
@@ -16,6 +18,7 @@ export function Form2() {
 
   const submitHandler = (e: any) => {
     e.preventDefault();
+    setShowMessage(!showMessage)
     console.log(data);
   }
 
@@ -56,10 +59,15 @@ export function Form2() {
               Send
             </button>
           </div>
-          <div className="data-fields">
-            <p>Name: {username}</p>
-            <p>Password: {password}</p>
-          </div>
+          {showMessage
+            ?
+            <div className="data-fields">
+              <p>Name: {data.password}</p>
+              <p>Password: {data.password}</p>
+            </div>
+            : null
+          }
+
         </div>
       </div>
     </>

@@ -1,0 +1,36 @@
+.container {
+  background-color: white;
+  height: 90vh;
+
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container {
+  width: auto;
+  background-color: white;
+  margin: auto;
+
+}
+
+.like-button {
+  width: auto;
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.liked {
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: rgb(205, 205, 205);
+}
+
+span {
+  padding: 0.5rem;
+  color: black;
+  font-size: 2rem;
+}

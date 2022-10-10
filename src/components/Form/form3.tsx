@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import './form3.modules.scss';
 
-export function Form3(props: any) {
+function Form3(props: any) {
   const userName = useRef<HTMLInputElement>(null);
   const password = useRef<HTMLInputElement>(null);
 
@@ -55,7 +55,7 @@ export function Form3(props: any) {
 }
 
 
-function LoginForm() {
+export function LoginForm() {
   const [form, setForm] = useState({
     userName: "",
     password: "",

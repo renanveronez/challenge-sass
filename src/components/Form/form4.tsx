@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './form3.modules.scss';
 
-export function Form4(props: any) {
+function Form4(props: any) {
   const [data, setData] = useState({
     username: "",
     password: ""
@@ -11,14 +11,17 @@ export function Form4(props: any) {
 
   const handleUsernameInputChange = (event: any) => {
     setData({ ...data, username: event.target.value })
+    // console.log(event.target.value)
   }
 
   const handlePasswordInputChange = (event: any) => {
     setData({ ...data, password: event.target.value })
+    // console.log(event.target.value)
   }
 
   const submitForm = (e: any) => {
     e.preventDefault();
+    console.log({ username, password })
     props.onSubmitHandler({
       userName: username,
       password: password
@@ -35,7 +38,7 @@ export function Form4(props: any) {
             className="form-field"
             type="text"
             id="user-input"
-            // name="userName"
+            name="userName"
             value={username}
             onChange={handleUsernameInputChange}
           />
@@ -44,7 +47,7 @@ export function Form4(props: any) {
             className="form-field"
             type="password"
             id="password-input"
-            // name="password"
+            name="password"
             value={password}
             onChange={handlePasswordInputChange}
           />
@@ -61,7 +64,7 @@ export function Form4(props: any) {
 }
 
 
-function LoginForm() {
+export function LoginForm() {
   const [form, setForm] = useState({
     userName: "",
     password: "",

@@ -1,0 +1,40 @@
+.container {
+  background-color: white;
+  height: 90vh;
+
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container {
+  width: auto;
+  background-color: white;
+  margin: auto;
+}
+
+
+.like-button {
+  background: #ccc;
+  margin-right: 20px;
+  padding: 1rem;
+}
+
+.dislike-button {
+  background: #ccc;
+  padding: 1rem;
+}
+
+.liked,
+.disliked {
+  background: #B2A5A3 !important;
+}
+
+.likes-counter {
+  color: #644e00;
+}
+
+.dislikes-counter {
+  color: #0000CD;
+}
