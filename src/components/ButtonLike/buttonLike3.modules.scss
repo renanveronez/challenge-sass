@@ -1,5 +1,5 @@
 .container {
-  background-color: white;
+  background-color: rgb(39, 39, 39);
   height: 90vh;
 
   display: flex;
@@ -10,31 +10,35 @@
 
 .sub-container {
   width: auto;
-  background-color: white;
+  background-color: rgb(39, 39, 39);
   margin: auto;
 }
 
 
 .like-button {
-  background: #ccc;
+  background: rgb(74, 74, 74);
   margin-right: 20px;
   padding: 1rem;
+  font-size: 3rem;
 }
 
 .dislike-button {
-  background: #ccc;
+  background: rgb(74, 74, 74);
   padding: 1rem;
+  font-size: 3rem;
 }
 
 .liked,
 .disliked {
-  background: #B2A5A3 !important;
+  background: #04461b !important;
 }
 
 .likes-counter {
-  color: #644e00;
+  font-size: 3rem;
+  color: #ffffff;
 }
 
 .dislikes-counter {
-  color: #0000CD;
+  color: #ffffff;
+  font-size: 3rem;
 }

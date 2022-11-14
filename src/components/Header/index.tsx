@@ -6,7 +6,8 @@ export function Header() {
       <div className={styles.headerContent}>
         <nav>
           <a href='/'>Home</a>
-          <a href='/tests'>Tests</a>
+          <a href='/tests'>Form</a>
+          <a href='/like'>Like</a>
 
         </nav>
 
