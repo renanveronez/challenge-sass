@@ -1,31 +1,31 @@
 import { useState } from "react";
-import { Login } from "./formBase";
+import { Login } from "./formBase3";
 import './styles.modules.scss';
 
 interface FormProps {
   userName: string;
-  password: string;
+  passWord: string;
 }
 
 export function FormComponent() {
   const [form, setForm] = useState({
     userName: "",
-    password: "",
+    passWord: "",
   });
 
   // const onSubmitHandler = (val: any) => {
   //   setForm(val);
   //   console.log("Val:" + JSON.stringify(val))
   // };
-  const onSubmitHandlerFunction = ({ userName, password }: FormProps) => {
-    setForm({ userName, password });
+  const onSubmitHandlerFunction = ({ userName, passWord }: FormProps) => {
+    setForm({ userName, passWord });
     console.log(
       "Val:"
-      + JSON.stringify({ userName, password })
+      + JSON.stringify({ userName, passWord })
     )
   };
 
-  if (!form.userName || !form.password) {
+  if (!form.userName || !form.passWord) {
     return <Login onSubmitHandler={onSubmitHandlerFunction} />;
   } else {
     console.log("Return:" + JSON.stringify(form))
@@ -39,7 +39,7 @@ export function FormComponent() {
           UserName:{form.userName}
         </div>
         <div>
-          Password:{form.password}
+          Password:{form.passWord}
         </div>
       </div>
     </>
