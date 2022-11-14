@@ -7,14 +7,14 @@ function Form3(props: any) {
 
   function submitForm(e: any) {
     e.preventDefault();
-    if (userName.current && password.current != null) {
-      console.log(
-        "SubmitForm:" +
-        {
-          userName: userName.current.value,
-          password: password.current.value
-        });
-    }
+    // if (userName.current && password.current != null) {
+    //   console.log(
+    //     "SubmitForm:" +
+    //     {
+    //       userName: userName.current.value,
+    //       password: password.current.value
+    //     });
+    // }
     if (userName.current && password.current != null) {
       props.onSubmitHandler({
         userName: userName.current.value,
@@ -30,18 +30,18 @@ function Form3(props: any) {
           <label>Username:</label>
           <input
             className="form-field"
-            ref={userName}
             type="text"
-            id="user-input"
             name="userName"
+            ref={userName}
+            id="user-input"
           />
           <label>Password:</label>
           <input
             className="form-field"
-            ref={password}
             type="password"
-            id="password-input"
             name="password"
+            ref={password}
+            id="password-input"
           />
           <button
             type="submit"

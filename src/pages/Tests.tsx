@@ -4,7 +4,6 @@ import { ButtonLike } from '../components/ButtonLike';
 
 import { Form1 } from '../components/Form/form1';
 import { Form2 } from '../components/Form/form2';
-import { Form5 } from '../components/Form/form5'
 
 import { LoginForm } from '../components/Form/form3';
 import ButtonLike2 from '../components/ButtonLike/buttonLike2';
@@ -19,9 +18,10 @@ import { FormComponent } from '../components/FormComponent';
 export function Tests() {
   return (
     <div className='container'>
+      <Form1 />
       {/* <Form2 /> */}
       {/* <Form5 /> */}
-      <FormComponent />
+      {/* <FormComponent /> */}
       {/* <LoginForm /> */}
       {/* <ButtonLike3 /> */}
       {/* <ButtonLike2 /> */}

@@ -26,15 +26,16 @@ export function Form1() {
 
     if (values.firstName && values.lastName && values.email) {
       setValid(true)
-    }
 
+      setValues({
+        firstName: "",
+        lastName: "",
+        email: ""
+      })
+
+    }
     setSubmitted(true);
 
-    setValues({
-      firstName: "",
-      lastName: "",
-      email: ""
-    })
   }
 
   return (
@@ -47,42 +48,42 @@ export function Form1() {
           }
 
           <input
-            onChange={handleFirstNameInputChange}
-            value={values.firstName}
-            id="first-name"
             className="form-field"
             type="text"
-            placeholder="First Name"
             name="firstName"
+            value={values.firstName}
+            onChange={handleFirstNameInputChange}
+            id="first-name"
+            placeholder="First Name"
           />
-          {submitted && !values.firstName
+          {submitted && !values.firstName && !valid
             ? <span id="first-name-error">Please enter a first name</span>
             : null
           }
 
           <input
-            onChange={handleLastNameInputChange}
-            value={values.lastName}
-            id="last-name"
             className="form-field"
             type="text"
-            placeholder="Last Name"
             name="lastName"
+            value={values.lastName}
+            onChange={handleLastNameInputChange}
+            id="last-name"
+            placeholder="Last Name"
           />
-          {submitted && !values.lastName
+          {submitted && !values.lastName && !valid
             ? <span id="last-name-error">Please enter a last name</span>
             : null
           }
           <input
-            onChange={handleEmailInputChange}
-            value={values.email}
-            id="email"
             className="form-field"
             type="text"
-            placeholder="Email"
             name="email"
+            value={values.email}
+            onChange={handleEmailInputChange}
+            id="email"
+            placeholder="Email"
           />
-          {submitted && !values.email
+          {submitted && !values.email && !valid
             ? <span id="email-error">Please enter an email address</span>
             : null
           }
