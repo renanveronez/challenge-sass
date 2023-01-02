@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
 interface FormProps {
   userName: string;
   passWord: string;
 }
-
 interface SubmitFormProps {
   onSubmitHandler: (props: FormProps) => void;
 }
@@ -14,12 +12,10 @@ export function Login(submit: SubmitFormProps) {
     username: "",
     password: ""
   });
-
   const { username, password } = login;
 
   const submitForm = (event: React.FormEvent) => {
     event.preventDefault();
-    // console.log({ username, password })
     submit.onSubmitHandler({
       userName: username,
       passWord: password
@@ -27,11 +23,9 @@ export function Login(submit: SubmitFormProps) {
   }
 
   const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
-    // const name = event.target.name;
     const name = event.currentTarget.name;
     const value = event.currentTarget.value;
     setLogin(dataLogin => ({ ...dataLogin, [name]: value }))
-    // console.log(event.target.value)
   }
 
   return (
@@ -62,7 +56,7 @@ export function Login(submit: SubmitFormProps) {
           </button>
         </form>
         <div className="form-results">
-          <p>Forbase3:  </p>
+          <p>Form Base3:  </p>
           <p> {login.username} </p>
           <p> {login.password} </p>
         </div>

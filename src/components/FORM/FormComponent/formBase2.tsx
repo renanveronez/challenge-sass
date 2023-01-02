@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 interface FormProps {
   userName: string;
   passWord: string;
@@ -24,12 +23,10 @@ export function Login(submit: SubmitFormProps) {
 
   const handleUsernameInputChange = (event: any) => {
     setUsername(event.target.value)
-    // console.log(event.target.value)
   }
 
   const handlePasswordInputChange = (event: any) => {
     setPassword(event.target.value)
-    // console.log(event.target.value)
   }
 
   return (
@@ -41,7 +38,7 @@ export function Login(submit: SubmitFormProps) {
             className="form-field"
             type="text"
             id="user-input"
-            name="userName"
+            // name="userName"
             value={username}
             onChange={handleUsernameInputChange}
           />
@@ -50,7 +47,7 @@ export function Login(submit: SubmitFormProps) {
             className="form-field"
             type="password"
             id="password-input"
-            name="password"
+            // name="password"
             value={password}
             onChange={handlePasswordInputChange}
           />

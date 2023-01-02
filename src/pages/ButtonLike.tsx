@@ -7,8 +7,9 @@ import { ButtonLike3 } from '../components/ButtonLike/buttonLike3';
 export function Like() {
   return (
     <div className='container'>
+      <ButtonLike />
       {/* <ButtonLike2 /> */}
-      <ButtonLike3 />
+      {/* <ButtonLike3 /> */}
     </div>
   )
 }
