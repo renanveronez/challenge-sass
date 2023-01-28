@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 interface FormProps {
   userName: string;
   passWord: string;
@@ -8,6 +9,7 @@ interface SubmitFormProps {
 }
 
 export function Login(submit: SubmitFormProps) {
+  const navigate = useNavigate();
   const [login, setLogin] = useState({
     username: "",
     password: ""
@@ -20,6 +22,7 @@ export function Login(submit: SubmitFormProps) {
       userName: username,
       passWord: password
     });
+    navigate('/')
   }
 
   const handleChange = (event: React.FormEvent<HTMLInputElement>) => {

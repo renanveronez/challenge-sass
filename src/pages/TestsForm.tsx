@@ -6,6 +6,8 @@ import { LoginForm } from '../components/FORM/Form/form3';
 // import { FormComponent } from '../components/FORM/FormComponent';
 import { FormOficial } from '../components/FORM/FormOficial';
 import { SearchTool } from '../components/SearchTool';
+import { Test } from '../components/Test';
+
 
 export function TestsForm() {
   return (
@@ -13,7 +15,8 @@ export function TestsForm() {
       {/* <Form1 /> */}
       {/* <Form2 /> */}
       {/* <LoginForm /> */}
-      <FormOficial />
+      {/* <FormOficial /> */}
+      <Test />
       {/* <SearchTool /> */}
     </div>
   )
