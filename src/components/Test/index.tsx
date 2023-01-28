@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import './styles.modules.scss';
+import './test.modules.scss';
 
 
 export function Test() {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './buttonlikedislike.modules.scss';
+import './styles.modules.scss';
 
-export function ButtonLike() {
+export function ButtonReact() {
   const [like, setLike] = useState(100)
   const [dislike, setDislike] = useState(25)
   const [hasLiked, setHasLiked] = useState(false)
