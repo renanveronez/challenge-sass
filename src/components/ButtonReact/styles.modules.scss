@@ -1,0 +1,43 @@
+.container {
+  height: 90vh;
+  gap: 1rem;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container {
+  width: auto;
+  background-color: white;
+  margin: auto;
+
+}
+
+.like-off {
+  width: auto;
+  display: flex;
+  cursor: pointer;
+  background-color: white;
+}
+
+.like-on,
+.dislike-on {
+  display: flex;
+  cursor: pointer;
+}
+
+.like-on {
+  background-color: rgb(150, 255, 155);
+}
+
+.dislike-on {
+  background-color: rgb(255, 130, 130);
+}
+
+.counter {
+  color: black;
+  margin: 0;
+  padding: 1rem;
+  font-size: 2rem;
+}
